@@ -1,0 +1,19 @@
+{
+	"extends": [
+		"prettier"
+	],
+	"plugins": [
+		"prettier"
+	],
+	"rules": {
+		"arrow-body-style": "off",
+		"prefer-arrow-callback": "off",
+		"trailingComma": "all",
+		"singleQuote": true,
+		"doubleQuote": true,
+		"prettier.singleQuote": true,
+		"prettier.eslintIntegration": true,
+		"prettier.tabWidth": 4,
+		"prettier.useTabs": true
+	}
+}
