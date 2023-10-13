@@ -6,7 +6,7 @@ const BaseRoute = () => {
         <Routes>
             {/*Public routes*/}
             <Route path="/" element={<Home/>} />
-            <Route path="/films/:id" element={<Films/>} />
+            <Route path="/films" element={<Films/>} />
 
             {/*Catch Errors*/}
             {/* <Route path='*' element={<NotFound/>}/> */}
