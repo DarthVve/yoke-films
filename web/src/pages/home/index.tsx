@@ -26,7 +26,7 @@ const Home = () => {
                     Scan the QR code to get access to our movie library.
                 </p>
                 <p className='qr-text'>
-                    A new Qr code will be generated every 3 mins.
+                    A new QR code will be generated every 3 mins.
                 </p>
                 <div className='qrcode'>
                     <img src={qr} alt='QR Code' loading='lazy' />

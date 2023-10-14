@@ -7,13 +7,18 @@
     height: 100vh;
     margin-top: 600px;
 
+    @media screen and (max-width: 500px) {
+        margin-top: 1650px;
+    }
+
     .films-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-
+        
         @media screen and (max-width: 500px) {
             grid-template-columns: repeat(1, 1fr);
+            gap: 0px;
         }
         
         article {
@@ -29,6 +34,11 @@
                 width: 400px;
                 height: 400px;
                 background-size: contain;
+
+                @media screen and (max-width: 500px) {
+                    width: 250px;
+                    height: 250px;
+                }
             }
             
             .film-title {
@@ -54,5 +64,9 @@
         gap: 4px;
         letter-spacing: 1px;
         font-weight: bold;
+
+        @media screen and (max-width: 500px) {
+            width: 100px;
+        }
     }
 }
