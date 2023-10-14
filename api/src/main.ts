@@ -16,7 +16,7 @@ async function bootstrap() {
     methods: "GET",
   });
 
-  await app.listen(process.env.PORT || 3500);
+  await app.listen(3500);
   // console.log(`${config.web}`);
   // console.log("Loaded configuration:", JSON.stringify(config, null, 2));
 }
