@@ -12,12 +12,12 @@ async function bootstrap() {
 
   const app = await NestFactory.create(AppModule);
   app.enableCors({
-    origin: "http://localhost:5173",
+    origin: "https://yoke-films.vercel.app",
     methods: "GET",
   });
 
-  await app.listen(3500);
-  console.log(`${config.web}`);
-  console.log("Loaded configuration:", JSON.stringify(config, null, 2));
+  await app.listen("3500");
+  // console.log(`${config.web}`);
+  // console.log("Loaded configuration:", JSON.stringify(config, null, 2));
 }
 bootstrap();
