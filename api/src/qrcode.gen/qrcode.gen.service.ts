@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import axios from "axios";
 
-import config from "src/config";
+// import config from "src/config";
 
 // This service is responsible for generating QR codes.
 @Injectable()
@@ -22,10 +22,10 @@ export class QrcodeGenService {
       },
       data: encodedParams,
     };
-    console.log(config.rapidAPI);
+
     try {
       const response = await axios.request(options);
-      console.log(response.data);
+      // console.log(response.data);
       return `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${response.data.result_url}`;
     } catch (error) {
       console.error(error);

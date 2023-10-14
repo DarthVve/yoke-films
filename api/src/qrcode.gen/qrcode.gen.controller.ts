@@ -8,6 +8,8 @@ export class QrcodeGenController {
 
   @Get()
   getQrcode(): Promise<string> {
-    return this.qrcodeGenService.getQrcode("https://www.google.com");
+    return this.qrcodeGenService.getQrcode(
+      "https://yoke-films.vercel.app/films/" + uuidv4()
+    );
   }
 }
